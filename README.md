@@ -1,0 +1,1 @@
+# jpa_specifications_showcase
