@@ -8,16 +8,24 @@
 
 ##### Steps to review and understand:
 - Study Employee and Department entities
--- com.boutiqaat.jpa.entity.Department
--- com.boutiqaat.jpa.entity.Employee
+```
+com.boutiqaat.jpa.entity.Department
+com.boutiqaat.jpa.entity.Employee
+```
 - Study Repositories classes:
--- com.boutiqaat.jpa.repo.EmployeeRepository
--- com.boutiqaat.jpa.repo.DepartmentRepository
+```
+com.boutiqaat.jpa.repo.EmployeeRepository
+com.boutiqaat.jpa.repo.DepartmentRepository
+```
 - Study Specificities classes:
--- com.boutiqaat.jpa.specification.DepartmentSpecifications
--- com.boutiqaat.jpa.specification.EmployeeSpecifications
+```
+com.boutiqaat.jpa.specification.DepartmentSpecifications
+com.boutiqaat.jpa.specification.EmployeeSpecifications
+```
 - Study all unit tests classes;
--- com.boutiqaat.jpa.DepartmentSpecificationsTests
--- com.boutiqaat.jpa.EmployeeSpecificationsTests
+```
+com.boutiqaat.jpa.DepartmentSpecificationsTests
+com.boutiqaat.jpa.EmployeeSpecificationsTests
+```
 
 # Enjoy
