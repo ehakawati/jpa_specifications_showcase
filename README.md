@@ -1,4 +1,4 @@
-# Easy intro to JPA specifications by Ehab Al-Hakwati
+# Easy intro to JPA specifications by Ehab Al-Hakawati
 
 - JPA 2 introduces a criteria API port (JPA Specifications) that can be used to build queries dynamically. Writing criteria is actually define a dynamic where-clause of a query for the domain class/Entities.
 
