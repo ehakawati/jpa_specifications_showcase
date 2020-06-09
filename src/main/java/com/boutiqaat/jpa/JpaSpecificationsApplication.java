@@ -4,7 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@EnableJpaRepositories
+import com.boutiqaat.jpa.repo.betterpaging.CustomJpaRepositoryFactoryBean;
+
+@EnableJpaRepositories( repositoryFactoryBeanClass = CustomJpaRepositoryFactoryBean.class)
 @SpringBootApplication
 public class JpaSpecificationsApplication {
 

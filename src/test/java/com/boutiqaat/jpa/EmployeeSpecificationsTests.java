@@ -40,8 +40,10 @@ class EmployeeSpecificationsTests {
 
 	@Test
 	public void findEmployees() {
-		employeeRepository.findAll(EmployeeSpecifications.department(departmentRepository.getOne(1))
-				.and(EmployeeSpecifications.salaryGreateThan(10).and(EmployeeSpecifications.name("Ehab"))));
+		employeeRepository.findAll(
+				EmployeeSpecifications.department(departmentRepository.getOne(1))
+				.and(EmployeeSpecifications.salaryGreateThan(10)
+			    .and(EmployeeSpecifications.name("Ehab"))));
 	}
 
 }

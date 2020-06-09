@@ -34,7 +34,7 @@ public class DepartmentSpecifications {
 	public static Specification<Department> groupByDepartment() {
 		return (root, query, cb) -> {
 			query.groupBy(root.get("id"));
-			return null;
+			return query.getGroupRestriction();
 		};
 	}
 
@@ -48,7 +48,7 @@ public class DepartmentSpecifications {
 			Join<Department, Employee> join = root.joinList("employees", JoinType.LEFT);
 			query.orderBy(cb.desc(cb.sum(join.get("salary"))));
 
-			return null;
+			return query.getRestriction();
 
 		};
 	}

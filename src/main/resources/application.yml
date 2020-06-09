@@ -6,7 +6,7 @@ spring:
     url: jdbc:mysql://${db.host:localhost}:${db.port:3306}/${db.name:jpa}?useSSL=${db.useSSL:false}&allowPublicKeyRetrieval=${db.allowPublicKeyRetrieval:true}
     username: ${db.username:root}
     password: ${db.password:password}
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     tomcat:
       test-while-idle: true
       validation-query: SELECT 1
@@ -16,8 +16,10 @@ spring:
     show-sql: true
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL5Dialect
+        ejb:
+          interceptor: com.boutiqaat.jpa.repo.betterpaging.PagableQueriesInterceptor
     hibernate:
       naming:
         physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
-      ddl-auto: create-drop  
+      ddl-auto: update
+      
