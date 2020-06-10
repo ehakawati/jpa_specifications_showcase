@@ -17,9 +17,11 @@ spring:
     properties:
       hibernate:
         ejb:
-          interceptor: com.boutiqaat.jpa.repo.betterpaging.PagableQueriesInterceptor
+          interceptor: com.boutiqaat.jpa.repo.betterpaging.PageableQueriesInterceptor
     hibernate:
       naming:
         physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
       ddl-auto: update
       
+      
+ 

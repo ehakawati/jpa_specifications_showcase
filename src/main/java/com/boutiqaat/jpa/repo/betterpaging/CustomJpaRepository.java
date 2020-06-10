@@ -2,7 +2,6 @@ package com.boutiqaat.jpa.repo.betterpaging;
 
 import java.io.Serializable;
 import java.math.BigInteger;
-import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;

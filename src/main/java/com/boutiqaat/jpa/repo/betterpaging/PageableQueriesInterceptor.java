@@ -4,9 +4,9 @@ import java.util.regex.Pattern;
 
 import org.hibernate.EmptyInterceptor;
 
-public class PagableQueriesInterceptor extends EmptyInterceptor {
+public class PageableQueriesInterceptor extends EmptyInterceptor {
 
-	private static final Pattern PATTERN = Pattern.compile(".*?\\?, \\?$");
+	private static final Pattern PATTERN = Pattern.compile(".*?limit \\?(, \\?)?$");
 	private static final long serialVersionUID = 1L;
 
 	@Override
