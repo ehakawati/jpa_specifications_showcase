@@ -76,18 +76,13 @@ public class CustomJpaRepository<T, ID extends Serializable> extends SimpleJpaRe
 	/**
 	 * 
 	 */
-	@SuppressWarnings({ "rawtypes" })
+
 	protected long getNativeCount() {
-		Query query = em.createNativeQuery("SELECT FOUND_ROWS() as `count`");
+		
+		final Query query = em.createNativeQuery("SELECT FOUND_ROWS() as `count`");
+		
+		return ((BigInteger) query.getSingleResult()).longValue();
 
-		List totals = query.getResultList();
-		long total = 0L;
-
-		for (Object element : totals) {
-			total += element == null ? 0 : ((BigInteger) element).longValue();
-		}
-
-		return total;
 	}
 
 }

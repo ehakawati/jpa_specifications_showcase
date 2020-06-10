@@ -3,10 +3,8 @@ package com.boutiqaat.jpa;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 
-import com.boutiqaat.jpa.entity.Department;
 import com.boutiqaat.jpa.repo.DepartmentRepository;
 import com.boutiqaat.jpa.specification.DepartmentSpecifications;
 
